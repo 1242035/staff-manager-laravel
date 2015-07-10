@@ -1,0 +1,107 @@
+$font-size-base: 16px;
+
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+body {
+	cursor: default;
+}
+.container-fluid {
+	max-width: 768px;
+}
+.table-responsive-container {
+	overflow: hidden;
+	margin-right: -($grid-gutter-width / 2);
+	margin-left: -($grid-gutter-width / 2);
+	position: relative;
+	&:after {
+		content: ' ';
+		display: block;
+		position: absolute;
+		top: 0;
+		height: 100%;
+		left: 100%;
+		width: 100%;
+		background-color: white;
+		box-shadow: -($grid-gutter-width / 2) 0 ($grid-gutter-width / 2) white;
+	}
+}
+.table-responsive {
+	// padding-right: ($grid-gutter-width / 2);
+	// padding-left: ($grid-gutter-width / 2);
+	.table {
+		min-width: 400px;
+	}
+}
+.table-fixed {
+	table-layout: fixed;
+	td, th {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+}
+.table > thead > tr > th.table-col-fa-fw ,
+.table > tbody > tr > td.table-col-fa-fw {
+	box-sizing: content-box;
+	width: 1.28571429em;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+table .btn {
+	margin: -8px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+.btn-toolbar > .form-inline {
+	float: left;
+  margin-left: 5px;
+}
+.modal-footer .form-group {
+	margin-bottom: 0;
+}
+
+.list-group-item-input.selectize-control {
+	display: block;
+	box-sizing: content-box;
+	border: 0;
+	background: none;
+	margin: -10px -15px;
+}
+.list-group-item-input .selectize-input {
+	display: block;
+	border: 0;
+	background: none;
+	padding: 0;
+	padding: 10px 15px;
+}
+.list-group-item input[type="checkbox"] {
+	display: none;
+}
+.list-group-item label {
+	color: #777;
+	cursor: pointer;
+	margin-bottom: 0;
+}
+.list-group-item label:hover {
+	color: #555;
+}
+.list-group-item.unchecked .list-group-item-label {
+	color: #777;
+	text-decoration: line-through;
+}
+.checked .hide-if-checked,
+.unchecked .hide-if-unchecked {
+	display: none;
+}
+
+h1 {
+	font-size: $font-size-base * 2;
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+h2 {
+	font-size: $font-size-base * 1.5;
+}
+h3, h4, h5, h6 {
+	font-size: $font-size-base;
+}
