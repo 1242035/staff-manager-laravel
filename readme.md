@@ -4,7 +4,7 @@
 
 1. Clone this repository.
 
-2. Make sure you have `composer` and `gulp` installed.
+2. Make sure you have `composer` and `npm` installed.
 
 3. Install dependencies by running the following commands from within the working directory
 
